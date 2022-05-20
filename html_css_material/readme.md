@@ -9,6 +9,12 @@ plugin：
 
 
 
+emmet语法：
+
+`.left+.right`
+
+
+
 ## 字体
 
 * 垂直居中
@@ -343,19 +349,60 @@ padding和margin的应用案例
 
 ## 第六天
 
+### 圆角
+
+`border-radius`用于外边框圆角，参数可为**数值**或**百分比**
+
+> p165
+
+语法：
+
+```css
+border-radius":length;
+
+// 50%是高度和宽度的一半
+border-radius":50%;
+```
+
+radius 半径
+
+* 画园
+
+  正方形
+
+  border-radius：50%
+
+* 圆角矩形
+
+  border-radius：高度的一半
+
+* 简写属性，
+
+  * (顺时针) 左上角、右上角、右下角、左下角
+  * 两个数值，两条对角线
+
+* 分开写：border-top-left-radius, border-top-right-radius
 
 
 
+### 盒子阴影
+
+`box-shadow` 为盒子添加阴影
+
+![image-20220518210739945](readme.assets/image-20220518210739945.png)
+
+默认是外阴影，不写inset就是外阴影；
+
+![image-20220518211605583](readme.assets/image-20220518211605583.png)
 
 
 
+### 文字阴影
 
+不是特别重要
 
+![image-20220518211515538](readme.assets/image-20220518211515538.png)
 
+ 
 
-
-
-
-
-
-
+ 
