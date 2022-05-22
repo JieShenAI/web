@@ -84,6 +84,7 @@ a {
 .search input {
     float: left;
     width: 345px;
+    /* 通过设置高等于容器的高实现居中效果 */
     height: 40px;
     border: 1px solid #00a4ff;
     border-right: 0;
@@ -197,36 +198,6 @@ a {
     font-weight: 700;
 }
 
-.bd ul li {
-    padding: 14px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.bd ul li h4 {
-    font-size: 16px;
-    color: #4e4e4e;
-}
-
-.bd ul li p {
-    font-size: 12px;
-    color: #a5a5a5;
-}
-
-.bd .more {
-    display: block;
-    height: 38px;
-    border: 1px solid #00a4ff;
-    margin-top: 5px;
-    text-align: center;
-    line-height: 38px;
-    color: #00a4ff;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-
-/* 精品推荐模块 */
-
 .goods {
     height: 60px;
     background-color: #fff;
@@ -287,9 +258,6 @@ a {
     margin-top: 10px;
     margin-right: 30px;
 }
-
-
-/* 把li 的父亲ul 修改的足够宽一行能装开5个盒子就不会换行了 */
 
 .box-bd ul {
     width: 1225px;
