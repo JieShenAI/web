@@ -1,0 +1,13 @@
+Auto Rename Tag
+Chinese
+Code Runner
+CSS Peek
+Excel Viewer
+HTML CSS Support
+Jupyter
+Jupyter Keymap
+Jupyter Notebook Renderers
+Mithril Emmet
+open in browser
+Pylance
+Python

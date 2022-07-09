@@ -1,5 +1,6 @@
 要学习的内容:
-* flex布局
+
+- [x] flex布局
 
 plugin：
 * open in browser
