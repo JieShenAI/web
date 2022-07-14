@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button>显示</button>
+    <button>隐藏</button>
+    <button>切换</button>
+    <button>上/下滑</button>
+    <button>悬停</button>
+    <div></div>
+    <p class="txt" name="p">文字</p>
+    <script>
+        // $(function(){
+        //     $('div').hide();
+        // })();
+        $('div').hide();
+        $('button').eq(0).click(function(){
+            $("div").show("normal","swing",function(){
+                alert("over");
+            });
+        });
+        $('button').eq(1).click(function(){
+            $("div").hide();
+        });
+        $('button').eq(2).click(function(){
+            $("div").toggle();
+        });
+        $('button').eq(3).click(function(){
+            $("div").slideToggle();
+        });
+        $('button').eq(4).hover(function(){
+            $("div").stop().slideToggle();
+            // $("div").slideToggle();
+        });
+        console.log($('p'));
+        console.log($('p').prop("name"));
+        console.log($('p').attr("name"));
+    </script>
+</body>
+
+</html>

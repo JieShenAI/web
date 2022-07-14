@@ -34,7 +34,11 @@
                 });
             })
             $("button").eq(2).click(function() {
-                    $("div").toggle(1000);
+                    $("div").toggle(1000,
+                        function(){
+                            console.log("change ...");
+                        }
+                    );
                 })
                 // 一般情况下，我们都不加参数直接显示隐藏就可以了
         });

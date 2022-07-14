@@ -24,6 +24,7 @@
             </li>
         </div>
     </ul>
+    <button>按钮</button>
     <script>
         // 1. 获取四个div元素 
         console.log($("div"));
@@ -31,7 +32,9 @@
         // 2. 给四个div设置背景颜色为粉色 jquery对象不能使用style
         $("div").css("background", "pink");
         // 3. 隐式迭代就是把匹配的所有元素内部进行遍历循环，给每一个元素添加css这个方法
-        $("ul>li").css("color", "blue");
+        $("button").mouseenter(function(){
+            $("ul>li").css("background", "aqua");
+        });
     </script>
 </body>
 

@@ -11,7 +11,7 @@
             width: 200px;
             height: 200px;
             background-color: pink;
-            transition: all .3s;
+            transition: all 1s;
         }
         
         .two {
@@ -27,7 +27,13 @@
         // var one = document.querySelector(".one");
         // one.className = "two";
         // $(".one").addClass("two");  这个addClass相当于追加类名 不影响以前的类名
-        $(".one").removeClass("two");
+        // $(".one").removeClass("two");
+        $(function(){
+            $("div").click(function() {
+                $(this).toggleClass("two");
+            });
+        });
+        
     </script>
 </body>
 
